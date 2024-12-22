@@ -1,0 +1,145 @@
+/* Background and container styles */
+body {
+    background-color: hsl(218, 41%, 15%);
+    color: hsl(219, 83%, 21%);
+}
+
+.container {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+/* Rounded tabs */
+@media (min-width: 576px) {
+    .rounded-nav {
+        border-radius: 50rem !important;
+        background-color: hsl(218, 41%, 15%);
+    }
+
+    .rounded-nav .nav-link {
+        border-radius: 50rem !important;
+        background-color: hsl(218, 41%, 35%);
+        color: hsl(218, 81%, 95%);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .rounded-nav .nav-link.active {
+        background-color: hsl(218, 41%, 45%);
+        color: hsl(218, 81%, 95%);
+    }
+
+    .rounded-nav .nav-link:hover {
+        background-color: hsl(218, 41%, 30%);
+        color: hsl(218, 81%, 75%);
+    }
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: hsl(218, 81%, 95%);
+}
+
+.table thead th {
+    background-color: hsl(218, 41%, 35%);
+    color: hsl(218, 81%, 95%);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: hsl(218, 41%, 20%);
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: hsl(218, 41%, 25%);
+}
+
+.table tbody tr:hover {
+    background-color: hsl(218, 41%, 30%);
+}
+
+.table td, .table th {
+    border-top: none;
+    color: hsl(218, 81%, 95%);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Button styles */
+.btn-approve, .btn-reject {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    width: 100px;
+    margin: 2px;
+}
+
+.btn-approve {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-approve:hover {
+    background-color: #218838;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-reject:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .table {
+        font-size: 0.875rem;
+    }
+
+    .btn-approve, .btn-reject {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .table {
+        font-size: 1rem;
+    }
+
+    .btn-approve, .btn-reject {
+        width: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .table {
+        font-size: 1.125rem;
+    }
+
+    .btn-approve, .btn-reject {
+        width: 140px;
+    }
+}

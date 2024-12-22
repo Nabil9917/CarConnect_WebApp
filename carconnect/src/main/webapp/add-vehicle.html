@@ -1,0 +1,39 @@
+<!-- add-vehicle.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarConnect - Add Vehicle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/add-vehicle.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2 class="text-center mt-5">Register Vehicle</h2>
+    <form id="registerVehicleForm" class="mt-4">
+        <div class="form-group">
+            <label for="make">Make</label>
+            <input type="text" class="form-control" id="make" required>
+        </div>
+        <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" class="form-control" id="model" required>
+        </div>
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="number" class="form-control" id="year" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register Vehicle</button>
+    </form>
+</div>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/add-vehicle.js"></script>
+</body>
+</html>

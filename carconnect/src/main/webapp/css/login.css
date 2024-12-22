@@ -1,0 +1,124 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #1d5e9f;
+}
+
+.background-radial-gradient {
+    height: 100%;
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+    hsl(218, 41%, 35%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%);
+}
+
+#radius-shape-1, #radius-shape-2 {
+    position: absolute;
+    background: radial-gradient(#44006b, #ad1fff);
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+}
+
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+h1.display-5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(218, 81%, 95%);
+}
+
+h1.display-5 span {
+    color: hsl(218, 81%, 75%);
+}
+
+p.mb-4 {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    color: hsl(218, 81%, 85%);
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .form-control {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.card .btn {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+.nav-link {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: hsl(218, 41%, 35%);
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 3rem;
+    }
+
+    h1.display-5 {
+        font-size: 4rem;
+    }
+
+    p.mb-4 {
+        font-size: 1.5rem;
+    }
+
+    .card .form-control {
+        font-size: 1.125rem;
+    }
+
+    .card .btn {
+        font-size: 1.125rem;
+    }
+
+    .nav-link {
+        font-size: 1.125rem;
+    }
+}

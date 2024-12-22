@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(218, 41%, 15%);
+    color: hsl(218, 81%, 85%);
+}
+
+/* Container-Stil */
+.container {
+    padding: 2rem;
+}
+
+/* Überschrift */
+h2.text-center {
+    color: hsl(218, 81%, 75%);
+    margin-top: 2rem;
+}
+
+/* Karten-Stil */
+.card {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+    border: none;
+    border-radius: 1rem; /* Radius der Karte anpassen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden; /* Stellt sicher, dass der Bildrahmen innerhalb der Karte bleibt */
+}
+
+/* Karten-Bilder */
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid hsl(218, 41%, 25%);
+    border-radius: 1rem 1rem 0 0; /* Radius oben bei den Bildern anpassen */
+}
+
+/* Karten-Titel */
+.card-title {
+    font-size: 1.25rem;
+    color: hsl(218, 41%, 35%);
+}
+
+/* Karten-Text */
+.card-text {
+    font-size: 1rem;
+    color: hsl(218deg 70.6% 52.29%);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: hsl(218, 41%, 35%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: hsl(218, 41%, 30%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+}

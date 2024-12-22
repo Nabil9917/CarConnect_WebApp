@@ -1,0 +1,63 @@
+<!-- profile.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarConnect - Profile</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+</head>
+<body>
+<div class="container p-5 bg-white rounded shadow mb-5">
+    <h2 class="text-center mt-5">My Profile</h2>
+    <div class="mt-4">
+        <!-- Rounded tabs -->
+        <ul id="profileTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+            <li class="nav-item flex-sm-fill">
+                <a id="bookingRequests-tab" data-toggle="tab" href="#bookingRequests" role="tab" aria-controls="bookingRequests" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Booking Requests</a>
+            </li>
+            <li class="nav-item flex-sm-fill">
+                <a id="usageHistory-tab" data-toggle="tab" href="#usageHistory" role="tab" aria-controls="usageHistory" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Usage History</a>
+            </li>
+        </ul>
+        <div id="profileTabContent" class="tab-content">
+            <!-- Booking Requests -->
+            <div id="bookingRequests" role="tabpanel" aria-labelledby="bookingRequests-tab" class="tab-pane table-responsive fade px-4 py-5 show active">
+                <table class="table mt-4">
+                    <thead>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Vehicle</th>
+                        <th>Requester</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bookingRequestsTableBody"></tbody>
+                </table>
+            </div>
+            <!-- Usage History -->
+            <div id="usageHistory" role="tabpanel" aria-labelledby="usageHistory-tab" class="tab-pane fade px-4 py-5">
+                <table class="table mt-4">
+                    <thead>
+                    <tr>
+                        <th>Vehicle</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                    </tr>
+                    </thead>
+                    <tbody id="usageHistoryTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+        <!-- End rounded tabs -->
+    </div>
+</div>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

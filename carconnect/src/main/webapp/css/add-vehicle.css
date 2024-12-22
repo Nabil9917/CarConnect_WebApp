@@ -1,0 +1,73 @@
+/* Allgemeine Stilregeln */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(218, 41%, 15%);
+    color: hsl(218, 81%, 85%);
+}
+
+/* Container-Stil */
+.container {
+    padding: 2rem;
+    max-width: 600px; /* Maximale Breite des Containers */
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Überschrift */
+h2.text-center {
+    color: hsl(218deg 89.24% 26.71%);
+    margin-bottom: 2rem;
+}
+
+/* Formular-Stil */
+form {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formular-Feld-Stil */
+.form-group label {
+    font-weight: bold;
+    color: hsl(218deg 61.74% 50.99%);
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    border: 1px solid hsl(218, 41%, 25%);
+    color: hsl(218, 41%, 35%);
+}
+
+.form-control:focus {
+    border-color: hsl(218, 41%, 35%);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+/* Button-Stil */
+.btn-primary {
+    background-color: hsl(218, 41%, 35%);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.btn-primary:hover {
+    background-color: hsl(218, 41%, 30%);
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+    }
+}

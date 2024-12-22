@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #f9fcff;
+}
+
+.background-radial-gradient {
+    height: 100%;
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+    hsl(218, 41%, 35%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Title styling */
+h2.text-center {
+    color: hsl(218, 81%, 75%);
+    margin-top: 3rem; /* Default margin for larger screens */
+}
+
+/* Card styling */
+.card {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+    padding: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 458px;
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.5rem;
+    color: hsl(218deg 89.24% 26.71%);
+}
+
+.card p {
+    font-size: 1.125rem;
+    color: hsl(218deg 61.85% 52.66%);
+}
+
+/* Form and button styling */
+.form-group label {
+    font-size: 1.125rem;
+    color: hsl(218deg 61.85% 52.66%);
+}
+
+.form-control {
+    font-size: 1.125rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn {
+    font-size: 1.125rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    background-color: hsl(218, 41%, 35%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: hsl(218, 41%, 30%);
+}
+
+.btn-danger {
+    background-color: hsl(0, 100%, 50%);
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: hsl(0, 100%, 40%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    h2.text-center {
+        margin-top: 0; /* Remove top margin */
+
+    }
+
+    .card {
+        width: 100%; /* Make card take full width on small screens */
+        margin-top: 1rem; /* Add margin to ensure some space */
+    }
+}
